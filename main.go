@@ -1,6 +1,6 @@
 package main
 
-import (
+import (	
 	"log"
 	"net/http"
 )
@@ -26,6 +26,10 @@ func contactPage(w http.ResponseWriter, r *http.Request) {
 }
 
 func main() {
+	http.Handle("/static/", http.StripPrefix("/static/", http.FileServer(http.Dir("static"))))
+	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
+		http.Redirect(w, r, "/home", http.StatusFound)
+	})
 
 	http.HandleFunc("/home", homePage)
 	http.HandleFunc("/courses", coursePage)

@@ -1,68 +1,77 @@
-<Doctype html>
-<html>
-    <head>
-        <title>Contact</title>
-        <style>
-            body {
-                margin: 0;
-                padding: 0;
-            }
-
-            header {
-                background-color: #333;
-                color: #fff;
-                padding: 10px 0;
-                text-align: center;
-            }
-
-            nav ul {
-                list-style-type: none;
-                padding: 0;
-            }
-
-            nav ul li {
-                display: inline;
-                margin-right: 10px;
-            }
-
-            nav ul li a {
-                color: #fff;
-                text-decoration: none;
-            }
-
-            main {
-                padding: 20px;
-            }
-
-            section {
-                margin-bottom: 20px;
-            }
-
-            footer {
-                background-color: #333;
-                color: #fff;
-                text-align: center;
-                padding: 10px 0;
-                position: fixed;
-                bottom: 0;
-                width: 100%;
-            }
-        </style>
-    </head>
-    <body>
-        <header>
-            <nav>
-                <ul>
-                    <li><a href="home">Home</a></li>
-                    <li><a href="about">About</a></li>
-                    <li><a href="contact">Contact</a></li>
-                    <li><a href="courses">Courses</a></li>
-                </ul>
-            </nav>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | DevOps</title>
+    <link rel="icon" type="image/png" href="/static/images/icon.png">
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="page-shell">
+        <header class="site-header">
+            <div class="nav-wrap">
+                <a class="brand" href="/home">
+                    <img class="brand-icon" src="/static/images/icon.png" alt="DevOps icon">
+                    <span>DevOps</span>
+                </a>
+                <nav class="nav-links" aria-label="Primary">
+                    <a href="/home">Home</a>
+                    <a href="/about">About</a>
+                    <a class="active" href="/contact">Contact</a>
+                    <a href="/courses">Courses</a>
+                </nav>
+            </div>
         </header>
 
-        <main>
-            <section>
-                <h1>Contact Us</h1>
-                <p>For any doubts while learning, Join our Members only exclusive slack channel</p>
-                <a href="https://www.youtube.com/abhishekVeeramalla/join">Join Slack</a>
+        <main class="page-main">
+            <section class="hero">
+                <span class="eyebrow">Get in touch</span>
+                <h1>Reach out when you need help, feedback, or collaboration.</h1>
+                <p>
+                    This project is meant to be shared and improved. Use the contact options below
+                    to connect with the team or follow the project updates.
+                </p>
+            </section>
+
+            <section class="section-grid">
+                <article class="card card-wide">
+                    <h2>Contact options</h2>
+                    <p>
+                        For project questions and collaboration, start with the repository link and
+                        use the platform you already use for development updates.
+                    </p>
+                    <div class="course-grid">
+                        <div class="card course-card">
+                            <h3>GitHub repository</h3>
+                            <p>Open the codebase, issues, and project history from one place.</p>
+                            <a href="https://github.com/Pran-droid/devops-miniproject">Visit repo</a>
+                        </div>
+                        <div class="card course-card">
+                            <h3>Project discussion</h3>
+                            <p>Use GitHub issues or pull requests for feedback, fixes, and ideas.</p>
+                            <a href="https://github.com/Pran-droid/devops-miniproject/issues">Open issues</a>
+                        </div>
+                    </div>
+                </article>
+
+                <aside class="card card-side">
+                    <h3>Quick note</h3>
+                    <p>
+                        If you want to update the About page later, send the new bio, links, and title
+                        and it can be swapped in quickly.
+                    </p>
+                </aside>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="footer-inner">
+                <span>&copy; 2026 DevOps Mini Project</span>
+                <span>Built for learning and collaboration</span>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

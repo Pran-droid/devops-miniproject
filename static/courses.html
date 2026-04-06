@@ -1,92 +1,86 @@
-<DocType html>
-
-<html>
-    <head>
-        <title>Learn DevOps from Basics</title>
-        <style>
-            body {
-                margin: 0;
-                padding: 0;
-            }
-
-            header {
-                background-color: #333;
-                color: #fff;
-                padding: 10px 0;
-                text-align: center;
-            }
-
-            nav ul {
-                list-style-type: none;
-                padding: 0;
-            }
-
-            nav ul li {
-                display: inline;
-                margin-right: 10px;
-            }
-
-            nav ul li a {
-                color: #fff;
-                text-decoration: none;
-            }
-
-            main {
-                padding: 20px;
-            }
-
-            section {
-                margin-bottom: 20px;
-            }
-
-            footer {
-                background-color: #333;
-                color: #fff;
-                text-align: center;
-                padding: 10px 0;
-                position: fixed;
-                bottom: 0;
-                width: 100%;
-            }
-        </style>
-    </head>
-    <body>
-        <header>
-            <nav>
-                <ul>
-                    <li><a href="home">Home</a></li>
-                    <li><a href="about">About</a></li>
-                    <li><a href="contact">Contact</a></li>
-                    <li><a href="courses">Courses</a></li>
-                </ul>
-            </nav>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses | DevOps</title>
+    <link rel="icon" type="image/png" href="/static/images/icon.png">
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="page-shell">
+        <header class="site-header">
+            <div class="nav-wrap">
+                <a class="brand" href="/home">
+                    <img class="brand-icon" src="/static/images/icon.png" alt="DevOps icon">
+                    <span>DevOps</span>
+                </a>
+                <nav class="nav-links" aria-label="Primary">
+                    <a href="/home">Home</a>
+                    <a href="/about">About</a>
+                    <a href="/contact">Contact</a>
+                    <a class="active" href="/courses">Courses</a>
+                </nav>
+            </div>
         </header>
 
-        <main>
-            <section>
-                <h1>Learn DevOps from Basics</h1>
-                <p>DevOps is a set of practices that combines software development (Dev) and IT operations (Ops)</p>
-                <p>It aims to shorten the systems development life cycle and provide continuous delivery with high software quality. DevOps is complementary with Agile software development; several DevOps aspects came from Agile methodology</p>    
+        <main class="page-main">
+            <section class="hero">
+                <span class="eyebrow">Learning roadmap</span>
+                <h1>Curated courses for the tools every DevOps engineer should know.</h1>
+                <p>
+                    Start with the foundations, then move into cloud, automation, and GitOps.
+                    Each link is chosen to keep the learning path simple and practical.
+                </p>
+            </section>
 
-                <h2>Main Tutorials</h2>
-                <p><a href="https://www.youtube.com/playlist?list=PLdpzxOOAlwvIKMhk8WhzN1pYoJ1YU8Csa">DevOps Zero to Hero</a></p>
-                <p><a href="https://www.youtube.com/playlist?list=PLdpzxOOAlwvLNOxX0RfndiYSt1Le9azze">AWS Zero to Hero</a></p>
-                <p><a href="https://www.youtube.com/playlist?list=PLdpzxOOAlwvIcxgCUyBHVOcWs0Krjx9xR">Azure Zero to Hero</a></p>
-                <p><a href="https://www.youtube.com/playlist?list=PLdpzxOOAlwvI0O4PeKVV1-yJoX2AqIWuf">Terraform Zero to Hero</a></p>
-                <p><a href="https://www.youtube.com/playlist?list=PLdpzxOOAlwvKwTyYNJCUwGPvql0TrsPgv">Python Zero to Hero</a></p>
+            <section class="section-grid">
+                <article class="card card-wide">
+                    <h2>Main Tutorials</h2>
+                    <div class="course-grid">
+                        <div class="card course-card">
+                            <h3>DevOps Zero to Hero</h3>
+                            <p>Build the baseline understanding of CI/CD, containers, and modern delivery.</p>
+                            <a href="https://www.youtube.com/playlist?list=PLdpzxOOAlwvIKMhk8WhzN1pYoJ1YU8Csa">Open playlist</a>
+                        </div>
+                        <div class="card course-card">
+                            <h3>AWS Zero to Hero</h3>
+                            <p>Learn the AWS services that are most useful in deployment and automation workflows.</p>
+                            <a href="https://www.youtube.com/playlist?list=PLdpzxOOAlwvLNOxX0RfndiYSt1Le9azze">Open playlist</a>
+                        </div>
+                        <div class="card course-card">
+                            <h3>Azure Zero to Hero</h3>
+                            <p>Understand Azure fundamentals and how they fit into a real platform stack.</p>
+                            <a href="https://www.youtube.com/playlist?list=PLdpzxOOAlwvIcxgCUyBHVOcWs0Krjx9xR">Open playlist</a>
+                        </div>
+                        <div class="card course-card">
+                            <h3>Terraform Zero to Hero</h3>
+                            <p>Learn infrastructure as code and how to keep environments consistent.</p>
+                            <a href="https://www.youtube.com/playlist?list=PLdpzxOOAlwvI0O4PeKVV1-yJoX2AqIWuf">Open playlist</a>
+                        </div>
+                    </div>
+                </article>
 
-                <h2>Additional Tutorials</h2>
-                <p><a href="https://www.youtube.com/playlist?list=PLdpzxOOAlwvKv4MFW35XRskZbQbrt6ep-">Networking Fundamentals</a></p>
-                <p><a href="https://www.youtube.com/playlist?list=PLdpzxOOAlwvLxd5nmtmORCmhD5jkrNbuE">Ansible Zero to Hero</a></p>
-                <p><a href="https://www.youtube.com/playlist?list=PLdpzxOOAlwvKu7OZpgj1-MzJFqZ8RBp6f">GitOps Zero to Hero</a></p>
-
-                <h2>Troubleshooting Tutorials</h2>
-                <p><a href="https://www.youtube.com/playlist?list=PLdpzxOOAlwvIrFBI1farpLS_OSUBXJMLX">Troubleshooting Kubernetes</a></p>
+                <aside class="card card-side">
+                    <h3>Additional Tutorials</h3>
+                    <ul class="link-list">
+                        <li><a href="https://www.youtube.com/playlist?list=PLdpzxOOAlwvKwTyYNJCUwGPvql0TrsPgv">Python Zero to Hero</a></li>
+                        <li><a href="https://www.youtube.com/playlist?list=PLdpzxOOAlwvKv4MFW35XRskZbQbrt6ep-">Networking Fundamentals</a></li>
+                        <li><a href="https://www.youtube.com/playlist?list=PLdpzxOOAlwvLxd5nmtmORCmhD5jkrNbuE">Ansible Zero to Hero</a></li>
+                        <li><a href="https://www.youtube.com/playlist?list=PLdpzxOOAlwvKu7OZpgj1-MzJFqZ8RBp6f">GitOps Zero to Hero</a></li>
+                        <li><a href="https://www.youtube.com/playlist?list=PLdpzxOOAlwvIrFBI1farpLS_OSUBXJMLX">Troubleshooting Kubernetes</a></li>
+                    </ul>
+                </aside>
             </section>
         </main>
 
-        <footer>
-            <p>&copy; Abhishek.Veeramalla</p>
+        <footer class="footer">
+            <div class="footer-inner">
+                <span>&copy; 2026 DevOps Mini Project</span>
+                <span>Hands-on resources for practical learning</span>
+            </div>
         </footer>
-    </body>
+    </div>
+</body>
 </html>

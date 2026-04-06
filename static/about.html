@@ -1,90 +1,77 @@
-<Docktype html>
-<html>
-    <head>
-        <title>About</title>
-        <style>
-            body {
-                margin: 0;
-                padding: 0;
-            }
-
-            header {
-                background-color: #333;
-                color: #fff;
-                padding: 10px 0;
-                text-align: center;
-            }
-
-            nav ul {
-                list-style-type: none;
-                padding: 0;
-            }
-
-            nav ul li {
-                display: inline;
-                margin-right: 10px;
-            }
-
-            nav ul li a {
-                color: #fff;
-                text-decoration: none;
-            }
-
-            main {
-                padding: 20px;
-            }
-
-            section {
-                margin-bottom: 20px;
-            }
-
-            footer {
-                background-color: #333;
-                color: #fff;
-                text-align: center;
-                padding: 10px 0;
-                position: fixed;
-                bottom: 0;
-                width: 100%;
-            }
-        </style>
-    </head>
-    <body>
-        <header>
-            <nav>
-                <ul>
-                    <li><a href="home">Home</a></li>
-                    <li><a href="about">About</a></li>
-                    <li><a href="contact">Contact</a></li>
-                    <li><a href="courses">Courses</a></li>
-                </ul>
-            </nav>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | DevOps</title>
+    <link rel="icon" type="image/png" href="/static/images/icon.png">
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="page-shell">
+        <header class="site-header">
+            <div class="nav-wrap">
+                <a class="brand" href="/home">
+                    <img class="brand-icon" src="/static/images/icon.png" alt="DevOps icon">
+                    <span>DevOps</span>
+                </a>
+                <nav class="nav-links" aria-label="Primary">
+                    <a href="/home">Home</a>
+                    <a class="active" href="/about">About</a>
+                    <a href="/contact">Contact</a>
+                    <a href="/courses">Courses</a>
+                </nav>
+            </div>
         </header>
 
-        <main>
-            <section>
-                <h1>About the Author</h1>
-                <p>Hi Everyone, My name is Abhishek and welcome to my channel :)</p>
+        <main class="page-main">
+            <section class="hero">
+                <span class="eyebrow">About the team</span>
+                <h1>Pranay Reddy, Sean Pereira, and Tanay Patil.</h1>
+                <p>
+                    This is a DevOps project implemented by the three of us to show practical learning
+                    through clean delivery, cloud tooling, and simple web experiences.
+                </p>
+            </section>
 
-                    <p>    I am an opensource enthusiast and a great believer in sharing knowledge. </p>
-                        <p>  I have my footprints in popular opensource projects like Argo CD, Argo CD Operator, Argo Rollouts Manager, GitOps Operator, F5 Ingress Controller, Nginx Ingress Controller by Nginx and others. </p>
-                    
-                            <p> Apart from working with Red Hat as a GitOps product lead, I also hold below positions in OpenSource communities</p>
-                                <p>  - Maintainer of Argo CD Operator</p>
-                                    <p> - Creator of Argo Rollouts Manager</p>
-                                        <p> - Maintainer of RedHat Developer (GitOps operator)</p>
-                                            <p> - Member of Argo Project</p>
-                                                <p> - Member of Argo SIG Security</p>
-                    
-                                                    <p> If you want to learn complete devops for free with practical projects, checkout the playlist</p>
-                                                        <p><a href="https://www.youtube.com/playlist?list=PLdpzxOOAlwvIKMhk8WhzN1pYoJ1YU8Csa"> Playlists</a></p>
-                    
-                                                            <p> Please subscribe to the channel to keep learning and growing together. Thanks :)</p>
+            <section class="section-grid">
+                <article class="card card-wide">
+                    <h2>Who we are</h2>
+                    <p>
+                        We are DevOps engineers focused on building projects that connect development,
+                        infrastructure, and deployment in a way that is easy to understand and use.
+                    </p>
+                    <p>
+                        The project is intentionally lightweight so the learning path stays clear: explore
+                        the site, follow the tutorials, and use the resources to build hands-on confidence.
+                    </p>
+                    <ul class="tag-list">
+                        <li>DevOps engineering</li>
+                        <li>Cloud and deployment workflows</li>
+                        <li>Practical project-based learning</li>
+                    </ul>
+                </article>
+
+                <aside class="card card-side">
+                    <h3>Project link</h3>
+                    <p>Repository: <a href="https://github.com/Pran-droid/devops-miniproject">Pran-droid/devops-miniproject</a></p>
+                    <h3>What this site covers</h3>
+                    <ul class="link-list">
+                        <li>Clear DevOps learning paths</li>
+                        <li>Cloud and automation tutorials</li>
+                        <li>Project documentation and deployment flow</li>
+                    </ul>
+                </aside>
             </section>
         </main>
 
-        <footer>
-            <p>&copy; Abhishek.Veeramalla</p>
+        <footer class="footer">
+            <div class="footer-inner">
+                <span>&copy; 2026 DevOps Mini Project</span>
+                <span>Built by Pranay, Sean, and Tanay</span>
+            </div>
         </footer>
-    </body>
+    </div>
+</body>
 </html>

@@ -4,88 +4,81 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 10px 0;
-            text-align: center;
-        }
-
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        nav ul li {
-            display: inline;
-            margin-right: 10px;
-        }
-
-        nav ul li a {
-            color: #fff;
-            text-decoration: none;
-        }
-
-        main {
-            padding: 20px;
-        }
-
-        section {
-            margin-bottom: 20px;
-        }
-
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px 0;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>    
+    <title>Home | DevOps</title>
+    <link rel="icon" type="image/png" href="/static/images/icon.png">
+    <link rel="stylesheet" href="/static/styles.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="home">Home</a></li>
-                <li><a href="about">About</a></li>
-                <li><a href="contact">Contact</a></li>
-                <li><a href="courses">Courses</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div class="page-shell">
+        <header class="site-header">
+            <div class="nav-wrap">
+                <a class="brand" href="/home">
+                    <img class="brand-icon" src="/static/images/icon.png" alt="DevOps icon">
+                    <span>DevOps</span>
+                </a>
+                <nav class="nav-links" aria-label="Primary">
+                    <a class="active" href="/home">Home</a>
+                    <a href="/about">About</a>
+                    <a href="/contact">Contact</a>
+                    <a href="/courses">Courses</a>
+                </nav>
+            </div>
+        </header>
 
-    <main>
-        <section>
-            <h1>Learn DevOps from Basics</h1>
-            <p>The main purpose of this website is to guide people on how to learn DevOps 
-                from basics for Free. We will provide you with the best resources to learn.
-            </p>
-        </section>
+        <main class="page-main">
+            <section class="hero">
+                <span class="eyebrow">Learn DevOps from basics</span>
+                <h1>Build your DevOps foundation with a cleaner, modern learning path.</h1>
+                <p>
+                    This project helps people understand the core DevOps workflow through practical,
+                    beginner-friendly resources covering automation, cloud, containers, and GitOps.
+                </p>
+                <div class="hero-actions">
+                    <a class="button" href="/courses">Explore courses</a>
+                    <a class="button-secondary" href="/about">Meet the team</a>
+                </div>
+            </section>
 
-        <section>
-            <h2>Overview</h2>
-            <p> Zero to Hero courses on all DevOps tools and popular Cloud(AWS and Azure) platform</p>
-        </section>
+            <section class="section-grid">
+                <article class="card card-wide">
+                    <h2>Why this project exists</h2>
+                    <p>
+                        The goal is to make DevOps easier to approach by organizing tools and concepts
+                        into a simple learning flow instead of scattered notes and disconnected links.
+                    </p>
+                    <div class="stats">
+                        <div class="stat">
+                            <strong>3</strong>
+                            <span>core learning tracks</span>
+                        </div>
+                        <div class="stat">
+                            <strong>1</strong>
+                            <span>single place to start</span>
+                        </div>
+                        <div class="stat">
+                            <strong>100%</strong>
+                            <span>practical project focus</span>
+                        </div>
+                    </div>
+                </article>
 
-        <section>
-            <h2>Courses Offered</h2>
-            <p>Please look at the <a href="courses">courses</a> section.</p>  
-        </section>
-    </main>
+                <aside class="card card-side">
+                    <h3>What you can do next</h3>
+                    <ul class="tag-list">
+                        <li>Follow the curated course list</li>
+                        <li>Read about the team behind it</li>
+                        <li>Use the contact page for help</li>
+                    </ul>
+                </aside>
+            </section>
+        </main>
 
-    <footer>
-        <p>&copy; Abhishek.Veeramalla</p>
-    </footer>
+        <footer class="footer">
+            <div class="footer-inner">
+                <span>&copy; 2026 DevOps Mini Project</span>
+                <span>Built with Go and simple static pages</span>
+            </div>
+        </footer>
+    </div>
 </body>
 </html>
