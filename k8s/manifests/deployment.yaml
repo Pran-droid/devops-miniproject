@@ -3,6 +3,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: go-web-app
+  namespace: get-web-app
   labels:
     app: go-web-app
 spec:
@@ -17,6 +18,6 @@ spec:
     spec:
       containers:
       - name: go-web-app
-        image: <docker-user-name>/go-web-app
+        image: prandroid/go-web-app:v1
         ports:
         - containerPort: 8080
