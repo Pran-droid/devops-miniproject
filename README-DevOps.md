@@ -64,6 +64,23 @@ We will use Argo CD to implement CD for the Go web application. Argo CD is a dec
 
 The Argo CD application will deploy the Go web application to a Kubernetes cluster. The application will be automatically synced with the Git repository, ensuring that the application is always up to date.
 
+## How the CI/CD pipeline is implemented
+
+1. Push code to the `main` branch.
+2. GitHub Actions runs build, test, and lint jobs.
+3. The workflow builds the Docker image and pushes it to Docker Hub.
+4. The workflow updates `helm/go-web-app-chart/values.yaml` with the new image tag.
+5. Argo CD detects the Helm chart change and syncs the new version to Kubernetes.
+
+## Required GitHub secrets
+
+Add these repository secrets before enabling the workflow:
+
+- `DOCKERHUB_USERNAME`
+- `DOCKERHUB_TOKEN`
+
+The workflow also needs `contents: write` permission so it can commit the updated Helm tag back to the repository.
+
 ## Conclusion
 
 
