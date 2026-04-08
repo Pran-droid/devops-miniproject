@@ -8,7 +8,7 @@ image:
   repository: prandroid/go-web-app
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "24081467518"
+  tag: "24119420120"
 
 ingress:
   enabled: false
